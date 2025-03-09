@@ -19,8 +19,7 @@
 - Import the data using:
   ```sh
   curl -X POST "http://localhost:9200/salaries/_bulk" -H "Content-Type: application/json" --data-binary @salaries.json
-  curl -X POST "http://localhost:9200/restaurants/_bulk" -H "Content-Type: application/json" --data-binary @restaurants.json
-  ```
+ 
 
 
 
