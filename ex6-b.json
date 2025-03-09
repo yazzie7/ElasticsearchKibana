@@ -1,0 +1,14 @@
+{
+    "query": {
+      "bool": {
+        "must": { "match_all": {} },
+        "filter": [
+          { "term": { "company": "RV6OYM KFC" } },
+          { "range": { "salary": { "gte": 80000 } } }
+        ]
+      }
+    },
+    "from": 0,
+    "size": 3,
+    "sort": [{ "age": { "order": "asc" } }]
+  }

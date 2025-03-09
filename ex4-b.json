@@ -1,0 +1,14 @@
+{
+    "query": {
+      "bool": {
+        "must": { "match_all": {} },
+        "filter": [
+          { "range": { "age": { "gte": 18, "lte": 30 } } },
+          { "term": { "company": "RV6OYM McDonalds" } } 
+        ]
+      }
+    },
+    "from": 0,
+    "size": 5,
+    "sort": [{ "salary": { "order": "desc" } }]
+  }

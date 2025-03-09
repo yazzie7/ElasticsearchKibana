@@ -1,0 +1,6 @@
+{
+    "query": { "match_all": {} },
+    "from": 0,
+    "size": 5,
+    "sort": [{ "salary": { "order": "desc" } }]
+}
